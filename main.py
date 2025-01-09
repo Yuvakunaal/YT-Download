@@ -4,14 +4,11 @@ from about import about
 from yt_downloader import yt_downloader
 from feedback import feedback
 
-hide_st_style = """
-            <style>
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
-            header {visibility: hidden;}
-            </style>
-            """
-st.markdown(hide_st_style, unsafe_allow_html=True)
+st.set_page_config(
+    page_title="YT Downloader",  # Title shown in the browser tab
+    page_icon="🌟",            # Emoji or URL to an image
+    layout="wide"              # Optional: 'centered' or 'wide'
+)
 
 st.sidebar.title("YT -> MP4")
 page = st.sidebar.radio("Go to", ["Home", "About", "YouTube Video Downloader"])
