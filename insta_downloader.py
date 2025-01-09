@@ -51,6 +51,3 @@ def insta_downloader():
                 st.error(f"Error: {e}")
         else:
             st.error("Please enter a valid Instagram Reel URL")
-
-if __name__ == '__main__':
-    insta_downloader()
