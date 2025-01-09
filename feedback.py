@@ -30,10 +30,16 @@ def feedback():
             "client_x509_cert_url": os.getenv("GCP_CLIENT_X509_CERT_URL")
         }
 
-        creds = ServiceAccountCredentials.from_json_keyfile_dict(creds_dict)
-        client = gspread.authorize(creds)
+        try:
+            creds = ServiceAccountCredentials.from_json_keyfile_dict(creds_dict)
+            client = gspread.authorize(creds)
 
-        sheet = client.open('Feedback').sheet1
-        sheet.append_row([name, email, rating, description])
+            sheet = client.open('Feedback').sheet1
+            sheet.append_row([name, email, rating, description])
 
-        st.success('Feedback submitted successfully!')
+            st.success('Feedback submitted successfully!')
+        except Exception as e:
+            st.error(f"Error: {e}")
+
+if __name__ == '__main__':
+    feedback()
