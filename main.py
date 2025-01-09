@@ -11,7 +11,7 @@ st.set_page_config(
     layout="wide"              # Optional: 'centered' or 'wide'
 )
 
-st.sidebar.title("YT -> MP4")
+st.sidebar.title("YT & INSTA -> MP4")
 page = st.sidebar.radio("Go to", ["Home", "About", "YouTube Video Downloader", "Insta Video Downloader"])
 
 if page == "Home":
