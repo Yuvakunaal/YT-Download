@@ -11,7 +11,7 @@ st.set_page_config(
 )
 
 st.sidebar.title("YT -> MP4")
-page = st.sidebar.radio("Go to", ["Home", "About", "YouTube Video Downloader"])
+page = st.sidebar.radio("Go to", ["Home", "About", "YouTube Video Downloader", "Insta Video Downloader"])
 
 if page == "Home":
     home()
@@ -19,3 +19,6 @@ elif page == "About":
     about()
 elif page == "YouTube Video Downloader":
     yt_downloader()
+elif page == "Insta Video Downloader":
+    insta_downloader()
+
