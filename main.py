@@ -2,6 +2,7 @@ import streamlit as st
 from home import home
 from about import about
 from yt_downloader import yt_downloader
+from insta_downloader import insta_downloader
 from feedback import feedback
 
 st.set_page_config(
