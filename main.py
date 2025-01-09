@@ -6,8 +6,8 @@ from insta_downloader import insta_downloader
 from feedback import feedback
 
 st.set_page_config(
-    page_title="YT Downloader",  # Title shown in the browser tab
-    page_icon="💠",            # Emoji or URL to an image
+    page_title="YT-INSTA-mp4",  # Title shown in the browser tab
+    page_icon="✔️",            # Emoji or URL to an image
     layout="wide"              # Optional: 'centered' or 'wide'
 )
 
