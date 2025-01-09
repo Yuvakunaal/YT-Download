@@ -5,7 +5,7 @@ from yt_downloader import yt_downloader
 from feedback import feedback
 
 st.sidebar.title("YT -> MP4")
-page = st.sidebar.radio("Go to", ["Home", "About", "YouTube Video Downloader", "Feedback"])
+page = st.sidebar.radio("Go to", ["Home", "About", "YouTube Video Downloader"])
 
 if page == "Home":
     home()
@@ -13,5 +13,3 @@ elif page == "About":
     about()
 elif page == "YouTube Video Downloader":
     yt_downloader()
-elif page == "Feedback":
-    feedback() 
