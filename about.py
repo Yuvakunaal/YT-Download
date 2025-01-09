@@ -10,6 +10,6 @@ def about():
     # Add some descriptive text
     st.markdown("""
     <div style='text-align: center;'>
-        <p style='font-size: 18px;'>Our app includes feature like YouTube video downloading</p>
+        <p style='font-size: 18px;'>Our app includes feature like YouTube video and Insta video downloading...</p>
     </div>
     """, unsafe_allow_html=True)
