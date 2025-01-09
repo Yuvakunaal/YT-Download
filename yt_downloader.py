@@ -21,6 +21,9 @@ def yt_downloader():
                     ydl_opts = {
                         'format': 'best',
                         'outtmpl': os.path.join(tmpdirname, '%(title)s.%(ext)s'),
+                        'http_headers': {
+                        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+                        },
                     }
                     with YoutubeDL(ydl_opts) as ydl:
                         info_dict = ydl.extract_info(url, download=True)
