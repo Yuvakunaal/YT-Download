@@ -4,5 +4,3 @@ oauth2client
 pandas
 yt-dlp
 instaloader
-tempfile
-os
